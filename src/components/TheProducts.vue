@@ -1,8 +1,8 @@
 <template>
   <div class="container bg-dark">
-        <h1 class="card-item">Productos</h1>
-    <div v-if="products.length > 0" class="card bg-primary">
-        <p v-for="product in products" :key="product.idproducto">
+        <h1>Productos</h1>
+    <div v-if="products.length > 0" class="card bg-primary m-auto text-center col-6">
+        <p class="card-item" v-for="product in products" :key="product.idproducto">
         <img :src="product.imagen" alt="product image">
             {{product.nombre}}
         </p>
@@ -39,6 +39,7 @@ export default {
 
 <style>
 img{
-    height: 15rem;
+    height: 10rem;
+    margin: 0 auto;
 }
 </style>
